@@ -1,0 +1,117 @@
+.overlay{
+    position: fixed;
+    width: 100%; 
+    height: 100%; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); 
+    z-index: 10; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-create{
+    position: absolute;
+    width: 60%;
+    height:80%;
+    background-color: white;
+    border-radius: 10px;
+    overflow: scroll;
+    text-align: start !important;
+}
+.form-create h2{
+    padding: 20px 0 0 20px;  
+}
+.form-create h2 button{
+    background: none;
+    border: none;
+    font-weight: 900;
+    color: white;
+    position: absolute;
+    right: 20px; 
+}
+.wrap-input{
+    padding: 10px 20px;
+    display: inline-block;
+}
+.wrap-input button{
+    border: none;
+    outline: none;
+    font-weight: 500px;
+    color: red;
+    background: none;
+}
+.create-label{
+    color: black;
+    margin: 0 !important;
+}
+.create-label input{
+    width: 30px;
+    height: 30px;
+    background-color: #4e73df;
+    color: white;
+    font-weight: 900;
+    border: none;
+    margin-left: 15px;
+    border-radius: 100%;
+}
+.create-input{
+    border: none;
+    padding: 10px;
+    background-color: #E6E6E6;
+    border-radius: 5px;
+    width: 325px;
+    line-height: 0 !important;
+}
+.create-input[type~=date], .create-input[type~=time]{
+    line-height: 20px !important;
+}
+.create-input[type~=file]{
+    line-height: 20px !important;
+    margin-left: 10px;
+    
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+::-webkit-scrollbar-track {
+    background-color: #E6E6E6;
+    border-radius: 10px;
+  }
+::-webkit-scrollbar-thumb{
+    background-color: #e6e6e631;
+    border-radius: 10px;
+}
+.btn-confirm{
+    display: block;
+    padding: 20px 30px !important;
+    line-height: 0 !important;
+    border: none;
+    font-weight: 700;
+    background-color: #4e73df;
+    color: white;
+    border-radius: 5px;
+    margin-top: 15px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-52%);
+}
+.spinner {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 9px solid;
+    border-color: #dbdcef;
+    border-right-color: #474bff;
+    animation: spinner-d3wgkg 1s infinite linear;
+ }
+ 
+ @keyframes spinner-d3wgkg {
+    to {
+       transform: rotate(1turn);
+    }
+ }
